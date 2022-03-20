@@ -1,38 +1,153 @@
-.App {
-  text-align: center;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* .App {
+padding: 70px;
+} */
+
+#root{
+ align-items: flex-start;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ margin-top: 20px;
+ margin-left: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.toolbar{
+  align-items: center;
+  background-color: #F8F9FA;
+  border: 1PX solid #eee;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px;
+  width: 90%;
+  height: 65px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.button_success{
+  border: none;
+  border-radius: 6px;
+  background-color: #22C55E;
+  color: white;
+  height: 40px;
+  width: 80px;
+  transition: all 300ms;
+}
+
+.button_success:hover{
+  background-color: #5ae78e ;
+}
+
+.users-form{
+  width: 90%;
+  padding-top: 20px;
+}
+
+form{
+  height: 200px;
+  width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-evenly;
+  margin-left: 25%;
+}
+
+input[type="text"],
+input[type="date"],
+button[type="button"],
+input[type="submit"]{
+  border-radius: 7px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+input[type="submit"]{
+  width: 80px;
+  border: none;
+  background-color: #0d6efd;
   color: white;
+  cursor: pointer;
+  transition: all 300ms;
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+button[type="button"]{
+  width: 80px;
+  border: none;
+  background-color: #e2b624;
+  color: white;
+  cursor: pointer;
+  transition: all 300ms;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+input[type="submit"]:hover{
+  background-color: #528fec;
+}
+
+button[type="button"]:hover{
+  background-color: #ebdd63;
+}
+
+table{
+  margin-top: 15px;
+  width: 90%;
+}
+
+.t_title, .t_head{
+  padding: 8px;
+  text-align: star;
+  line-height: 42px;
+  background-color: #F8F9FA;
+  height: 50px;
+  border-top: #EEE;
+  border-bottom: #EEE;
+}
+
+th{
+  border-bottom: 1px solid #EEE;
+  text-align: start;
+  padding: 8px;
+}
+
+td{
+  border-bottom: 1px solid #EEE;
+  text-align: start;
+  padding: 8px;
+  height: 60px;
+}
+
+
+.button_edit_circle{
+  border-radius: 50px;
+  background-color: #d0d313;
+  border: none;
+  color: white;
+  height: 40px;
+  width: 40px;
+  transition: all 300ms;
+}
+
+
+.button_delete_circle{
+  border-radius: 50px;
+  background-color: #df1515;
+  border: none;
+  color: white;
+  height: 40px;
+  width: 40px;
+  transition: all 300ms;
+}
+
+.button_edit_circle:hover{
+  background-color: #ebdd63;
+}
+
+.button_delete_circle:hover{
+  background-color: #df3d3d;
 }
