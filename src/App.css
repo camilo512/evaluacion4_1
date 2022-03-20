@@ -67,7 +67,7 @@ input[type="submit"]{
 }
 
 input[type="submit"]{
-  width: 80px;
+  width: 100%;
   border: none;
   background-color: #0d6efd;
   color: white;
@@ -97,6 +97,11 @@ button[type="button"]:hover{
 table{
   margin-top: 15px;
   width: 90%;
+}
+
+.t_title{
+  font-size: x-large;
+  font-weight: bold;
 }
 
 .t_title, .t_head{
