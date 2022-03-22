@@ -51,7 +51,7 @@ const UsersForm = ({getUsers, userSelected, deselectUser}) => {
             Swal.fire({
                 position: 'center',
                 icon: 'success',
-                title: 'Your work has been saved',
+                title: 'Your User has been saved',
                 showConfirmButton: false,
                 timer: 1500
               })
@@ -101,7 +101,7 @@ const UsersForm = ({getUsers, userSelected, deselectUser}) => {
                 />
 
                 <input 
-                type="text"
+                type="password"
                 name='password'
                 placeholder='Password'
                 {...register("password")}

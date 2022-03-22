@@ -32,7 +32,7 @@ const UserTable = ({users, selectUser, deleteUser}) => {
         <thead>
             <tr className='t_head'>
                 <th>Email <i className="fas fa-envelope"></i></th>
-                <th>Password <i className="fas fa-lock"></i></th>
+                {/* <th>Password <i className="fas fa-lock"></i></th> */}
                 <th>First Name <i className="fas fa-user-friends"></i></th>
                 <th>Last Name <i className="fa fa-user-friends"></i></th>
                 <th>Birthday <i className="fas fa-birthday-cake"></i></th>
@@ -44,7 +44,7 @@ const UserTable = ({users, selectUser, deleteUser}) => {
                 users.map(user => (
                     <tr key={user.id} >
                     <td>{user.email}</td>
-                    <td>{user.password}</td>
+                    {/* <td>{user.password}</td> */}
                     <td>{user.first_name}</td>
                     <td>{user.last_name}</td>
                     <td>{user.birthday}</td>

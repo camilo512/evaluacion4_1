@@ -58,6 +58,7 @@ form{
 }
 
 input[type="text"],
+input[type="password"],
 input[type="date"],
 button[type="button"],
 input[type="submit"]{
